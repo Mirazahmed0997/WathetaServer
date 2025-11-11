@@ -5,31 +5,37 @@ import { authRoutes } from "../Modules/Auth/auth.route";
 import { divisionRoutes } from "../Modules/Division/Division.route";
 import { TourTypeRoute } from "../Modules/Tour/Tour.route";
 import { TourRoute } from "../Modules/Tour/TourModel.route";
+import {  OffersRoute } from "../Modules/WathetaOffers/Watheta.route";
 
 
 export const router= Router()
 
 const moduleRoutes=[
+    // {
+    //     path:'/user',
+    //     route: userRoutes
+    // },
+    // {
+    //     path:'/auth',
+    //     route: authRoutes
+    // },
+    // {
+    //     path:'/division',
+    //     route: divisionRoutes
+    // },
+    // {
+    //     path:'/TourType',
+    //     route: TourTypeRoute
+    // },
+    // {
+    //     path:'/Tour',
+    //     route: TourRoute
+    // },
     {
-        path:'/user',
-        route: userRoutes
+        path:'/offers',
+        route: OffersRoute
     },
-    {
-        path:'/auth',
-        route: authRoutes
-    },
-    {
-        path:'/division',
-        route: divisionRoutes
-    },
-    {
-        path:'/TourType',
-        route: TourTypeRoute
-    },
-    {
-        path:'/Tour',
-        route: TourRoute
-    }
+    
 ]
 
 moduleRoutes.forEach((route)=>
